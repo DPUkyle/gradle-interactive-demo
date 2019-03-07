@@ -1,0 +1,5 @@
+apply plugin: com.kylemoore.UserInteractionPlugin
+
+wrapper {
+  gradleVersion '4.8'
+}

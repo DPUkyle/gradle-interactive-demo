@@ -1,5 +1,11 @@
-apply plugin: com.kylemoore.UserInteractionPlugin
+//apply plugin: com.kylemoore.UserInteractionPlugin
 
 wrapper {
   gradleVersion '4.8'
+}
+
+tasks.create 'askMe', Exec, { t ->
+  t.commandLine './askMe.sh'
+  t.group 'Demonstration'
+  t.description 'Simple, bash-based example of user interaction via a Gradle task'
 }
